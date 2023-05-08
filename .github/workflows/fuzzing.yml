@@ -12,12 +12,12 @@ jobs:
     steps:
       - name: Build Fuzzers
         id: build
-        uses: google/oss-fuzz/infra/cifuzz/actions/build_fuzzers@master
+        uses: google/oss-fuzz/infra/cifuzz/actions/build_fuzzers@04a28a41737a3a0b0f96ce0a7fcc40b7e839c507 # master
         with:
           oss-fuzz-project-name: "sigstore"
           dry-run: false
       - name: Run Fuzzers
-        uses: google/oss-fuzz/infra/cifuzz/actions/run_fuzzers@master
+        uses: google/oss-fuzz/infra/cifuzz/actions/run_fuzzers@04a28a41737a3a0b0f96ce0a7fcc40b7e839c507 # master
         with:
           oss-fuzz-project-name: "sigstore"
           fuzz-seconds: 600
